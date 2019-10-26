@@ -1,0 +1,155 @@
+/*General atributes*/
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 auto;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    scroll-behavior: smooth;
+}
+
+/*Nav bar*/
+nav {
+background-color: #92bde7;
+width: 100%;
+height: 8%;
+position: fixed;
+display: flex;
+flex-direction: column;
+}
+
+.menu {
+    text-shadow: none;
+    margin-right: 3rem;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color:#485e75;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+nav img {
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+nav a:link, a:visited {
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Main*/
+/*Every page refresh will give you different background images*/
+#main-wrap{
+    background-image: url(https://source.unsplash.com/1600x900/?nature,auroraborealis);
+    width: 100%;
+    height: 50vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    border-bottom:#293a4d 5px solid;
+}
+
+/*About*/
+
+#about {
+    background-image: url(https://source.unsplash.com/1600x900/?nature,nightskies);
+    width: 100%;
+    height: 50vw;
+    display: grid;
+    border-bottom:#293a4d 5px solid;
+    text-align: center;
+}
+
+#about > h2 {
+    padding-top: 5rem;
+}
+
+/*My Work*/
+
+#work {
+    background-image: url(https://source.unsplash.com/1600x900/?nature,aurora);
+    width: 100%;
+    height: 50vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-bottom:#293a4d 5px solid;
+}
+
+.code-img-links :hover {
+    border: #293a4d 2px solid;
+}
+
+ #work>div> h2, p{
+    padding-top: 4rem;
+}
+
+#codepens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.codepen {
+    height: 250px;
+    width: 250px;
+}
+
+/*Contact Me*/
+
+#contact {
+    background-image: url(https://source.unsplash.com/1600x900/?nature,nightskies);
+    width: 100%;
+    height: 30vw;
+    display: grid;
+}
+
+#information {
+    padding-top: 10rem;
+}
+
+.icons {
+    margin-right: 3rem;
+}
+
+.icons :hover {
+    border: #92bde7 1px solid;
+    border-radius: 45%;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #485e75;
+    width: 100%;
+    height: 3vw;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*Font size*/
+
+p{
+    font-size: 1.5em;
+}
+
+/*Button*/
+
+button {
+    background-color:#92bde7;
+    border-radius: 15%;
+    height: 30px;
+}
+
+button:hover {
+    background-color: #485e75;
+    transition: 500ms ease;
+}
+
+button a:link, a:visited {
+    text-decoration: none;
+}
