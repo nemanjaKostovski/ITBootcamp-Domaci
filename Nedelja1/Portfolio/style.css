@@ -3,13 +3,13 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0 auto;
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
     scroll-behavior: smooth;
 }
 
 /*Nav bar*/
 nav {
-background-color: #92bde7;
+background-color: #293a4d;
 width: 100%;
 height: 8%;
 position: fixed;
@@ -44,10 +44,10 @@ nav a:link, a:visited {
 }
 
 /*Main*/
-/*Every page refresh will give you different background images*/
 #main-wrap{
-    background-image: url(https://source.unsplash.com/1600x900/?nature,auroraborealis);
-    width: 100%;
+    background-image: url(./images/code.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 50vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -58,7 +58,9 @@ nav a:link, a:visited {
 /*About*/
 
 #about {
-    background-image: url(https://source.unsplash.com/1600x900/?nature,nightskies);
+    background-image: url(./images/bgblack.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 50vw;
     display: grid;
@@ -73,16 +75,15 @@ nav a:link, a:visited {
 /*My Work*/
 
 #work {
-    background-image: url(https://source.unsplash.com/1600x900/?nature,aurora);
-    width: 100%;
-    height: 50vw;
+    background-image: url(./images/bgblack.jpg);
+    background-size: cover;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     border-bottom:#293a4d 5px solid;
 }
 
 .code-img-links :hover {
-    border: #293a4d 2px solid;
+    filter: blur(1.5px);
 }
 
  #work>div> h2, p{
@@ -102,9 +103,9 @@ nav a:link, a:visited {
 /*Contact Me*/
 
 #contact {
-    background-image: url(https://source.unsplash.com/1600x900/?nature,nightskies);
-    width: 100%;
-    height: 30vw;
+    background-image: url(./images/nightsky.jpg);
+    background-size: cover;
+    height: 40vw;
     display: grid;
 }
 
@@ -124,7 +125,7 @@ nav a:link, a:visited {
 /*Footer*/
 
 footer{
-    background-color: #485e75;
+    background-color: #293a4d;
     width: 100%;
     height: 3vw;
     text-align: center;
@@ -135,6 +136,10 @@ footer{
 
 p{
     font-size: 1.5em;
+}
+
+.text{
+    font-size: 2em;
 }
 
 /*Button*/
