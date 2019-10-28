@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Form practise</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="dom">Forma</h1>
+        <nav>
+            <ul>
+                <li><a class="menu" href="#first-form">
+                        Registracija</a>
+                </li>
+                <li><a class="menu" href="#table">
+                        Tabela</a>
+                </li>
+                <li><a class="menu" href="#second-form">
+                        Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form id="first-form" action="https://google.com">
+        <div><label for="name"> First name: <input type="text" placeholder="Enter your name" required></label></div>
+        <div><label for="name"> Last name: <input type="text" placeholder="Enter last name" required></label></div>
+        <div><label for="email"> Email: <input type="email" placeholder="enter you email" required></label></div>
+        <div><label for="password"> Password: <input type="password" placeholder="enter your password" required></label>
+        </div>
+        <div><label for="password"> Confirm Password: <input type="password" placeholder="repeat password"
+                    required></label></div>
+        <input class="button" type="submit" value="Register">
+    </form>
+    <div></div>
+    <div id="table">
+        <table>
+            <h2>Automobili</h2>
+            <thead>
+                <th>RB</th>
+                <th>Marka</th>
+                <th>Model</th>
+                <th>Kubikaza</th>
+                <th>Godiste</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Opel</td>
+                    <td>Astra</td>
+                    <td>100</td>
+                    <td>2005</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Reno</td>
+                    <td>Clio</td>
+                    <td>90</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Fiat</td>
+                    <td>Punto</td>
+                    <td>100</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>Mercedes</td>
+                    <td>A170</td>
+                    <td>100</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>Dacia</td>
+                    <td>Duster</td>
+                    <td>110</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>Ford</td>
+                    <td>Fiesta</td>
+                    <td>105</td>
+                    <td>2007</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form id="second-form" action="https://google.com">
+        <div><label for="name"> Username: <input type="text"></label></div>
+        <div><label for="password"> Password: <input type="password"></label></div>
+        <input class="button" type="submit" value="Login">
+    </form>
+    <footer>
+        &copy; Nemanja Kostovski 2019
+    </footer>
+    <script src="./zadatak2.js"></script>
+</body>
+
+</html>
