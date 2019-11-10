@@ -4,7 +4,7 @@ const right = document.querySelectorAll('.right');
 const counter = document.querySelector('#counter');
 let counterCount = 0;
 let currentDate = new Date();
-let dateTime = `${currentDate.getFullYear()}/${currentDate.getMonth()}/${currentDate.getDay()}-${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
+let dateTime = `${currentDate.getFullYear()}/${currentDate.getMonth()+1}/${currentDate.getDate()}-${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`;
 
 //Adding onclick event
 left.forEach(buttonL => {
@@ -31,7 +31,8 @@ function orderingNow(amount) {
         amount = counterCount;
         //If pizza counter is zero, then the function won't be executed!
         if (counterCount === 0) return
-        console.dir(`${dateTime} You just ordered ${amount} of pizzas!`);
+        if (counterCount === 1) return console.dir(`${dateTime} You just ordered ${amount} pizza!`);
+        console.dir(`${dateTime} You just ordered ${amount} pizzas!`);
     }
 });
 //Resets counterCount and displays 0
