@@ -25,7 +25,7 @@ function addItem() {
         alert('Task title can\'t be empty!');
         return;
     }
-
+    //Task Priority
     let priority = document.querySelector('#dropdown');
     let options = priority.options;
 
@@ -104,19 +104,3 @@ function invertSelected() {
         check.checked = !check.checked;
     });
 }
-
-// //Task priority
-
-
-// function priorities() {
-//     let lowPrior = itemContainer.document.createTextNode('Task priority: Low');
-//     let mediumPrior = itemContainer.document.createTextNode('Task priority: Medium');
-//     let highPrior = itemContainer.document.createTextNode('Task priority: High');
-//     if (priority.child.value === '') return;
-//     else if(priority.child.value === 'Low') itemContainer.appendChild(lowPrior);
-//     else if(priority.child.value === 'Medium') itemContainer.appendChild(mediumPrior);
-//     else if(priority.child.value === 'High') itemContainer.appendChild(highPrior);
-
-// }
-// let priority = document.querySelector('#dropdown');
-// priority.addEventListener('select', priorities);
