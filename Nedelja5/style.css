@@ -7,6 +7,35 @@ body{
     flex-direction: column;
 }
 
+#income-style{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #4287f5;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 10px;
+}
+
+#expenses-style{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fc2d2d;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 140px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#expenses-sum{
+    padding-left: 150px;
+}
+
+#expenses-sum-percent{
+    display: inline;
+}
+
 .sum{
     font-size: 2rem;
 }
@@ -20,6 +49,23 @@ body{
     background-color: #e0ddd5;
     display: flex;
     justify-content: center;
+}
+
+.dropdown{
+    border: 1px solid #010914;
+    padding: 10px;
+}
+.desc{
+    border: 1px solid #010914;
+    padding: 10px;
+}
+.num-input{
+    border: 1px solid #010914;
+    padding: 10px;
+}
+.add-item{
+    border: 1px solid #010914;
+    padding: 10px;
 }
 
 .input-value{
@@ -43,8 +89,9 @@ body{
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    border-bottom: indigo 1px solid;
 }
-
+/*Button style*/
 .delete-btn{
     margin-top: 38px;
     padding: 4px;
