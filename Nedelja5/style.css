@@ -1,0 +1,63 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.upper{
+    display: flex;
+    flex-direction: column;
+}
+
+.sum{
+    font-size: 2rem;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+}
+
+.middle{
+    background-color: #e0ddd5;
+    display: flex;
+    justify-content: center;
+}
+
+.input-value{
+    margin: 0 auto;
+    display: inline-block;
+}
+.output{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.income-output{
+    width: 500px;
+}
+
+.expenses-output{
+    width: 500px;
+}
+
+.item-container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.delete-btn{
+    margin-top: 38px;
+    padding: 4px;
+    border: solid 1px red;
+    color: red;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    display: none;
+}
+
+.item-container:hover .delete-btn {
+    display: initial;
+}

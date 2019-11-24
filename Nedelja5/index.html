@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget Calc</title>
+</head>
+
+<body>
+    <main>
+        <section class="upper">
+            <h1 class="align">Available budget for - </h1>
+            <p id='sum-of-sum' class="align sum">0.00</p>
+            <p class="align">Income: 
+                <span id="income-sum" class="sums"></span>
+            </p>
+            <p class="align"> Expenses:
+                <span id="expenses-sum" class="sums"></span>
+                <span id='expenses-sum-percent'></span>
+            </p>
+        </section>
+        <section class="middle">
+            <div class="input-value">
+                <select name="select" class="dropdown">
+                    <option value="Income">Income</option>
+                    <option value="Expense">Expense</option>
+                </select>
+                <input type="text" class="desc" placeholder="Add a description">
+                <input class="num-input" type="number" placeholder="Value">
+                <button class="add-item">Input</button>
+            </div>
+        </section>
+        <section class="output">
+            <div class="income-output">
+                <h3>Income</h3>
+                <div class="placeholder-income"></div>
+            </div>
+            <div class="expenses-output">
+                <h3>Expenses</h3>
+                <div class="placeholder-expenses"></div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
