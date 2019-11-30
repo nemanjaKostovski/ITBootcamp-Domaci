@@ -1,0 +1,57 @@
+1. Зашто користимо JSON?
+
+Sama ideja JSON-a je da je to univerzalni jezik (nije programski jezik)
+koji moze da sluzi kao spona izmedju drugih programskih jezika.
+Na primer u komunikaciji izmedju frontenda(JS) i backenda(PHP) zahvaljuljuci
+JSON-u nije neophodno da frontend zna backend i obrnuto, vec im je JSON dovoljan
+za komunikaciju.
+
+2. Зашто су модули корисни? +Пример
+
+Moduli su korisni kako nas kod ne bi bio prebukiran, 
+odnosno kako ne bismo na primer imali 1000linija koda u jednom
+fajlu, nego to lepo sortirali i formatirali u nekoliko fajlova.
+Ovo se sve odnosi na js faljove.
+Podela se vrsi kako bi kod i logika bila preglednija i program cistiji
+i samim tim i laksi za odrzavanje.
+
+Primer: Napravimo digitron aplikaciju, u jednom modulu cemo da ubacimo dugmice, dok 
+u drugom da damo funkcionalnost tim dugmicima (npr ako je napredni kalkulator, jedan modul
+za osnovne matematicke operacije, jedan modul za naprednije).
+
+3. Шта је ECMAScript?
+
+ES je standardizacija za JS.
+Ona je neka vrsta nadogradnje programskog jezika, koja mu dodaje
+novu funkcionalnost. Trenutno najvise u upotrebi je ES6, odnosno ES2015.
+
+4. Опишите како функционишу HTTP захтеви и шта је то REST API.
+
+Oni funkcionisu na taj nacin sto korisnik interfejsa trazi nesto,
+i dobija povratnu informaciju. (Npr. prilikom logovanja na neki sajt
+korisnik unosi username i password i kao odgovor dobija pristup sajtu).
+Osnovni http zahtevi su get, post, put, delete.
+
+API - Application Programming Interface
+REST - Representational State Transfer
+Predstavljaju arhitekturu za dizajniranje internet aplikacija;
+Saradjuju sa klijent-server protokolima (gotovo uvek http);
+Tretiraju objekte sa servera kao resurse koji mogu da se citaju,
+kreiraju, izbrisu;
+Mogu da se koriste u bilo kom programskom jeziku;
+Svi API-i imaju svoja pravila i strukturu.
+
+5. Која је разлика између == и === ?
+Double equal proverava da li je informacija 
+ista kao ona sa kojom se uporedjuje.
+Triple equal radi isto sto i double uz to sto i tip
+varijable mora da se podudara.
+
+6. Шта враћа console.log(typeof typeof true);
+Објаснити зашто
+
+typeof vraca odgovor u stringu
+Sto znaci da kada god trazimo neki tip varijable
+ono nam vraca odgovor u stringu
+typeof true vraca "boolean"
+typeof "boolean" vraca "string"
