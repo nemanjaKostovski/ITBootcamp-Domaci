@@ -5,7 +5,6 @@ import { Popup } from './components/popup';
 class App extends Component {
 
 
-
   state = {
     imenik: [
       {
@@ -53,7 +52,7 @@ class App extends Component {
     } = this.state;
 
     const result = imenik.filter(person => person.name === fullName);
-    
+
     if (fullName === '' || phoneNum === '' || phoneNum[0] === '-')
       return this.setState({ error: true });
 
